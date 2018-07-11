@@ -1,0 +1,327 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="theme-color" content="#2196F3">
+    <title>Welcome Admin-Globalpdfs.com </title>
+
+    <!-- CSS  -->
+    <link href="min/plugin-min.css" type="text/css" rel="stylesheet">
+    <link href="min/custom-min.css" type="text/css" rel="stylesheet" >
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script type="text/javascript" src="https://angular-file-upload.appspot.com/js/ng-file-upload-shim.js"></script>
+<script type="text/javascript" src="https://angular-file-upload.appspot.com/js/ng-file-upload.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <style>
+  .remove {
+    background: #C76868;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 24px;
+    border: 0;
+    cursor: pointer;
+    display: inline-block;
+    padding: 4px 9px;
+    vertical-align: top;
+    line-height: 100%;
+}
+  .form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+	padding: 15px
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #fff;
+     background-color: transparent; 
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+    background-color: transparent;
+    opacity: 1;
+}
+.upload_new{
+ outline-style: solid;
+    outline-color:#F36221;
+margin-top:15px;
+padding:5spx;
+}
+.author-boddx .personal-sm a {
+    padding: 8px 10px;
+    font-size: 1.5em;
+    color: #fff;
+}
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 1000;
+    font-size: large;
+}
+.btn-default {
+    color: #F1F3F5;
+    background-color: transparent;
+    border-color: #F36221;
+}
+.btn-default:hover {
+    color: #fff;
+    background-color: #F36221;
+    border-color: #F36221;
+}
+
+.btn-default1 {
+    color: #F1F3F5;
+    background-color:#F36221 ;
+    border-color: #F36221;
+	transition-delay:10s;
+}
+.btn-default1:hover {
+    color: #F36221;
+    background-color: transparent;
+    border-color: #F36221;
+}
+
+.icons-sm {
+    cursor: pointer;
+    position: relative;
+    padding: 8px 30px;
+    border: none;
+    margin: 10px 1px;
+    outline: 0!important;
+	color:#fff;
+    font-size: 30px;
+}
+.admin{
+width:97%;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    color: #fff;
+    background-color: #F36221;
+}
+a {
+    color: #F36221;
+    text-decoration: none;
+}
+.fileUpload {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+}
+.fileUpload input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+	color:white;
+}
+.tab a{
+color: #F36221;
+background: #222;
+}
+.fileUpload {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+}
+.fileUpload input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+  </style>
+  <script >
+  document.getElementById("uploadBtn").onchange = function () {
+    document.getElementById("uploadFile").value = this.value;
+};
+</script>
+ </head>
+<body id="top" class="scrollspy" ng-app ="admin" ng-controller="admin_ctrl">
+
+
+<!-- Pre Loader -->
+<div id="loader-wrapper">
+    <div id="loader"></div>
+ 
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+ 
+</div>
+
+<!--Navigation-->
+ <div class="navbar-fixed">
+    <nav id="nav_f" class="default_color" role="navigation">
+        <div class="container">
+            <div class="nav-wrapper">
+            <a href="index.html" id="logo-container" class="brand-logo">Global pdfs</a>
+                <ul class="right hide-on-med-and-down">
+		    <li><a href="contact.html">Contact</a></li>             
+                    <li><a href="#">How to Use</a></li>
+                    <li><a href="#">Terms and Policies</a></li>
+                    <li><a href=" ">Log-Out </a></li>
+			
+                </ul>
+                <ul id="nav-mobile" class="side-nav">
+                     <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">How to Use</a></li>
+                    <li><a href="#">Terms and Policies</a></li>
+                    <li><a href=" ">Log-Out </a></li>
+				 </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<!--Hero-->
+
+
+<!--contact us -->
+<div id="contact" class="section scrollspy white-text" >
+<div class="container">
+<div class="admin container">
+
+<!--tabs-->
+<ul class="nav nav-tabs">
+  <li class="active"><a data-toggle="tab" href="#home">Upload Notes</a></li>
+  <li><a data-toggle="tab" href="#menu1">Dashboard</a></li>
+  <li><a data-toggle="tab" href="#menu2">Edit Profile</a></li>
+</ul>
+
+<div class="tab-content">
+  <div id="home" class="tab-pane fade in active">
+  
+    <form name="myForm">
+   <div class="col-sm-12 upload_new" data-ng-repeat="note in notes">
+     <div class="col-sm-12 form-group" >
+	 <div class="col-sm-4">
+	 <label for=""> Enter display name for notes</label>
+	 </div>
+	 <div class="col-sm-8">
+	 <input type="text" class="form-control" placeholder="Enter notes name" ng-model="txt_note.id" size="31" required>
+     
+		</div>
+					  </div>
+					   <div class="col-sm-12 form-group" >
+					   <div class="col-sm-4">
+					   <label for="">
+					   Choose Files
+					   </label>
+					   </div>
+					   <div class="col-sm-8">
+					   
+					   <input id="uploadFile" placeholder="Choose File" disabled="disabled" />
+<div class="fileUpload btn btn-primary">
+    <span>Upload</span>
+    <input id="uploadBtn" type="file" class="upload" ngf-select ng-model="picFile_node.id" accept="application/pdf,application/vnd.ms-powerpoint,application/vnd.openxmlformats-officedocument.presentationml.slideshow,application/vnd.openxmlformats-officedocument.presentationml.presentation" />
+</div>
+					  
+					   </div>
+					   </div>
+					   <div class="col-sm-12 text-center form-group">
+  <input type="button" class="btn-default1 btn-lg" id="upload_button_{{note.id}}" value="upload"  
+              ng-click="uploadPic(picFile_node.id,txt_note.id,note.id)" ></input>
+   					</div>	
+					   <div class="col-sm-12 form-group">
+					   <div class="col-sm-6 text-center form-group">
+					     <button ng-show="$last" ng-click="addNewnote()" class=" btn btn-success">Add more notes</button>
+				</div>
+				 <div class="col-sm-6 text-center form-group" >
+	
+				      <button class="btn btn-danger " ng-show="$last" ng-click="removenote()">Remove this note</button>
+					</div>
+					</div>
+	 </div>
+	 </form>
+ 
+  </div>
+  <div id="menu1" class="tab-pane fade">
+ 
+ Dashboard contents
+  </div>
+  <div id="menu2" class="tab-pane fade">
+  
+Edit profile contents
+
+  </div>
+</div>
+
+</div>
+</div>
+</div>
+
+<!-- end of contact us -->
+<!--Footer-->
+<footer id="contact" class="page-footer default_color scrollspy">
+    <div class="container">  
+        <div class="row">
+            <div class="col l6 s12">
+		
+               </div>
+            <div class="col l5 s12">
+                <h5 class="white-text">www.globalpdfs.com</h5>
+                <ul>
+                   <li><a class="white-text" href="#intro">About Us</a></li>
+                    <li><a class="white-text" href="#team">How to Use</a></li>
+                    <li><a class="white-text" href="#contact">Terms and Policies</a></li>
+             
+			</ul>
+            </div>
+            <div class="col l5 s12">
+                <h5 class="white-text">Social-Networks</h5>
+                <ul>
+                    <li>
+                        <a class="white-text" href="">
+                            <i class="small fa fa-twitter-square white-text"></i> Twitter
+                        </a>
+                    </li>
+                    <li>
+                        <a class="white-text" href="https://www.facebook.com/scoremore">
+                            <i class="small fa fa-facebook-square white-text"></i> Facebook
+                        </a>
+                    </li>
+                    <li>
+                        <a class="white-text" href="https://www.linkedin.com/">
+                            <i class="small fa fa-linkedin-square white-text"></i> Linkedin
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright default_color">
+            <div class="container">
+            © 2016 Copyright www.globalpdfs.com 
+            <a class="grey-text text-lighten-4 right" href="#!">www.globalpdfs.com</a>
+            </div>
+        
+</footer>
+
+
+    <!--  Scripts-->
+    <script src="min/plugin-min.js"></script>
+    <script src="min/custom-min.js"></script>
+   <script type="text/javascript" src="js/admin_controller.js"></script>
+   <script type="text/javascript" src="js/bootstrap-filestyle.min.js"> </script>
+
+
+    </body>
+</html>

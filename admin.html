@@ -1,0 +1,466 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="theme-color" content="#2196F3">
+    <title>Welcome Admin-Globalpdfs.com </title>
+
+    <!-- CSS  -->
+    <link href="min/plugin-min.css" type="text/css" rel="stylesheet">
+    <link href="min/custom-min.css" type="text/css" rel="stylesheet" >
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script type="text/javascript" src="https://angular-file-upload.appspot.com/js/ng-file-upload-shim.js"></script>
+<script type="text/javascript" src="https://angular-file-upload.appspot.com/js/ng-file-upload.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    $('.collapsible').collapsible({
+      accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+    });
+  });
+   </script>
+  <style>
+  .remove {
+    background: #C76868;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 24px;
+    border: 0;
+    cursor: pointer;
+    display: inline-block;
+    padding: 4px 9px;
+    vertical-align: top;
+    line-height: 100%;
+}
+  .form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+	padding: 15px
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #fff;
+     background-color: transparent; 
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+    background-color: transparent;
+    opacity: 1;
+}
+.collapsible-header {
+    display: block;
+    cursor: pointer;
+    min-height: 3rem;
+    line-height: 3rem;
+    padding: 0 1rem;
+    /* background-color: #fff; */
+    border-bottom: 1px solid #ddd;
+}
+.upload_new{
+ outline-style: solid;
+    outline-color:#F36221;
+margin-top:15px;
+padding:5spx;
+}
+.author-boddx .personal-sm a {
+    padding: 8px 10px;
+    font-size: 1.5em;
+    color: #fff;
+}
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 1000;
+    font-size: large;
+}
+.btn-default {
+    color: #F1F3F5;
+    background-color: transparent;
+    border-color: #F36221;
+}
+.btn-default:hover {
+    color: #fff;
+    background-color: #F36221;
+    border-color: #F36221;
+}
+
+.btn-default1 {
+    color: #F1F3F5;
+    background-color:#F36221 ;
+    border-color: #F36221;
+	transition-delay:10s;
+}
+.btn-default1:hover {
+    color: #F36221;
+    background-color: transparent;
+    border-color: #F36221;
+}
+
+.icons-sm {
+    cursor: pointer;
+    position: relative;
+    padding: 8px 30px;
+    border: none;
+    margin: 10px 1px;
+    outline: 0!important;
+	color:#fff;
+    font-size: 30px;
+}
+.admin{
+width:97%;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    color: #fff;
+    background-color: #F36221;
+}
+a {
+    color: #F36221;
+    text-decoration: none;
+}
+.fileUpload {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+}
+.fileUpload input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+	color:white;
+}
+.tab a{
+color: #F36221;
+background: #222;
+}
+.fileUpload {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+}
+.fileUpload input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.panel-default>.panel-heading+.panel-collapse>.panel-body {
+    background-color:#222;
+}
+#preloader { position: fixed; left: 0; top: 0; z-index: 999; width: 100%; height: 100%; overflow: visible; background: #333 url('img/preloader.gif') no-repeat center center; }
+
+  
+ </style>
+ <script>
+ jQuery(document).ready(function($) {  
+
+// site preloader -- also uncomment the div in the header and the css style for #preloader
+$(window).load(function(){
+	$('#preloader').fadeOut('slow',function(){$(this).remove();});
+});
+
+});
+ </script>
+  
+ </head>
+<body id="top" class="scrollspy" ng-app ="admin" ng-controller="admin_ctrl">
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.7";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!--modal box for notes-->
+
+<div id="myModal" class="modal fade" role="dialog">
+ <div id="preloader"></div>
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Notes</h4>
+      </div>
+      <div class="modal-body">
+	  <ul class="collection with-header" data-ng-repeat="x in notes_names">
+        <li class="collection-item" id="{{x.notes_name}}"><div>{{x.notes_name}}<a href="#!" class="secondary-content" ng-click="delete_notes(x.notes_name,x.sno,x.notes_link,x.extension)"><i class="material-icons">delete</i></a></div></li>
+      </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  
+</div>
+
+<!-- end of modal box-->
+
+<!-- Pre Loader -->
+</div>
+
+<!--Navigation-->
+ <div class="navbar-fixed">
+    <nav id="nav_f" class="default_color" role="navigation">
+        <div class="container">
+            <div class="nav-wrapper">
+            <a href="index.html" id="logo-container" class="brand-logo">Global pdfs</a>
+                <ul class="right hide-on-med-and-down">
+		    <li><a href="contact.html">Contact</a></li>             
+                    <li><a href="termsandpolicies.html">Terms and Policies</a></li>
+                    <li><a ng-click="logout()">Log-Out </a></li>
+			
+                </ul>
+                <ul id="nav-mobile" class="side-nav">
+                     <li><a href="contact.html">Contact</a></li>
+                    <li><a href="termsandpolicies.html">Terms and Policies</a></li>
+                    <li><a ng-click="logout()">Log-Out </a></li>
+				 </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<!--Hero-->
+
+<!--contact us -->
+<div id="contact" class="section scrollspy white-text" >
+<div class="container-fluid">
+<div class="admin container-fluid">
+
+<!-- Modal -->
+
+<!--tabs-->
+<ul class="nav nav-tabs">
+  <li class="active"><a data-toggle="tab" href="#menu1">Dashboard</a></li>
+  <li><a data-toggle="tab" href="#menu2">Edit Profile</a></li>
+</ul>
+
+<div class="tab-content">
+   <div id="menu1" class="tab-pane fade in active">
+ 
+ <div class="rows form-group">
+ <form name="myForm_addsub">
+ <div class="col-md-12">
+ <div class="col-md-3"><label>Enter subject name </label></div>
+  <div class="col-md-5">
+	 <input type="text" class="form-control" placeholder="Enter Subject name" ng-model="sub_name" size="31" required>
+    </div>
+	<div class="col-md-4">
+	<input type="button" class=" btn btn-success" id="add_subject"  ng-click="add_subject()" ng-disabled="!myForm_addsub.$valid" class="form-group" value="Add Subject"> </input>
+	</div>
+ </div>
+ </form>
+ </div>
+ 
+ <div class="rows">
+ <div class="col-md-10 form-group">
+ <div class="col-md-4">
+ <input type="text" class="form-control " placeholder="Search subjects here " ng-model="filter_sub">
+ </div>
+ 
+ </div>
+</div>
+<div class="rows">
+<div class="col-md-12">
+ 
+    
+  
+ <div class="panel-group popout" id="accordion" data-ng-repeat="n in sub | filter : filter_sub" >
+<!-- First Panel -->
+    <div class="panel panel-default">
+        <div class="panel-heading" >
+             <h4 class="panel-title"
+                 data-toggle="collapse" 
+                 data-target="#{{n.hash}}">
+               {{n.sub_name}}
+             </h4>
+			 <div class="right">
+			 <i class="fa fa-delete"></i>
+			 </div>
+        </div>
+        <div id="{{n.hash}}" class="panel-collapse collapse">
+            <div class="panel-body">
+			<a class="waves-effect waves-light btn btn-default1 modal-trigger" data-toggle="modal" data-target="#myModal" ng-click="get_notes(n.hash)"><i class="fa fa-file-pdf-o" style="color:white"></i>
+ View {{n.sub_name}} notes</a>
+    
+    
+			
+	 
+			 <form name="myForm">
+   <div class="col-md-12 upload_new" data-ng-repeat="note in notes">
+   
+     <div class="col-md-12 " >
+	 <div class="col-md-4">
+	 <label for=""> Enter display name for notes</label>
+	 </div>
+	 <div class="col-md-4">
+	 <input type="text" class="form-control" placeholder="Enter notes name" ng-model="notes_name_note.id" size="31" required>
+     
+		</div>
+		<div class="col-md-4">
+		<div class="fileUpload btn btn-primary">
+    <span>Choose file</span>
+    <input id="uploadBtn" type="file" class="upload" ngf-select ng-model="notes_node.id" accept="application/pdf,application/vnd.ms-powerpoint,application/vnd.openxmlformats-officedocument.presentationml.slideshow,application/vnd.openxmlformats-officedocument.presentationml.presentation" required  />
+</div>
+		
+		</div>
+					  </div>
+					   <div class="col-md-12 " >
+					  
+					   
+					 
+					   <div class="col-md-4 text-center ">
+  <input type="button" class=" btn-default1 btn-lg" id="upload_button_{{note.id}}_{{n.hash}}" value="upload" ng-disabled="!myForm.$valid" 
+              ng-click="upload_notes(notes_node.id,notes_name_note.id,n.hash,note.id)"  ></input>
+   					</div>	
+					
+					   <div class="col-md-4 text-center ">
+					     <button ng-show="$last"  ng-click="addNewnote()" class=" btn btn-success">Add more notes</button>
+				</div>
+				 <div class="col-md-4 text-center " >
+	
+				      <button class="btn btn-danger " ng-show="$last" ng-click="removenote()">Remove this note</button>
+					</div>
+					</div>
+	 </div>
+	 </form>
+ 
+
+			
+		    </div>
+        </div>
+    </div>
+</div>
+    
+    
+    
+ </div>
+  </div>
+  </div>
+  
+  <!--end of tab1 -->
+  <div id="menu2" class="tab-pane fade">
+  
+<form name="myForm_update" id="myForm_update"  >
+   <div class="container">
+   <div class="row " ng-repeat="pro in profile" >
+   <div class="col-sm-12 myForm_update-center" align="center">
+    <div class="col-sm-10 form-group">
+    
+   <label for="text">Name</label>
+   <input type="text" class="form-control"  ng-model="update_name" />
+   </div>
+       <div class="col-sm-10 form-group">
+    
+   <label for="text">E-mail</label>
+   <input type="text" class="form-control"  value="{{pro.email}}" disabled  /><br>
+   <span style="color:red;">(E-mail id cannot be changed)</span>
+   </div>
+       <br />
+	      <div class="col-sm-10 form-group">
+    
+       <label for="password">Password</label>
+       <input type="text" class="form-control" value="{{pro.password}}" ng-model="update_password"   />
+       <br />
+	   </div>
+	    
+     <div class="col-sm-10 form-group">
+    
+   <label for="text">Designation</label>
+   <input type="text" class="form-control" ng-model="update_designation"  required/>
+   </div>  <div class="col-sm-10 form-group">
+    
+   <label for="text">instuition</label>
+   <input type="text" class="form-control"  ng-model="update_ins"  required/>
+   </div>
+          <div class="col-sm-10 form-group ">
+    
+   <input type="submit" class="btn-default1 btn-lg" class="form-control" id="update_button" ng-disabled="!myForm_update.$valid" ng-model="update_button" ng-click="update_func(update_name,update_password,update_designation,update_ins)" value="Update Profile"></input>
+	</div>
+	</div>
+	</form>
+
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- end of contact us -->
+<!--Footer-->
+<footer id="contact" class="page-footer default_color scrollspy">
+    <div class="container">  
+        <div class="row">
+            <div class="col l6 s12">
+		
+               </div>
+            <div class="col l5 s12">
+                <h5 class="white-text">www.globalpdfs.com</h5>
+                <ul>
+                   <li><a class="white-text" href="about.html">About Us</a></li>
+                    <li><a class="white-text" href="contact.html">Contact</a></li>
+                      <li><a class="white-text" href="termsandpolicies.html">Terms and Policies</a></li>
+                
+			</ul>
+            </div>
+            <div class="col l5 s12">
+                <h5 class="white-text">Like us on Facebook</h5>
+                <ul>
+                  
+                    <li>
+                       
+                       <div class="fb-page"
+  data-href="https://www.facebook.com/globalpdfs" 
+  data-width="340"
+  data-hide-cover="false"
+  data-show-facepile="true"></div>
+                       </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright default_color">
+            <div class="container">
+            © 2016 Copyright www.globalpdfs.com 
+            <a class="grey-text text-lighten-4 right" href="#!">www.globalpdfs.com</a>
+            </div>
+        
+</footer>
+
+
+
+    <!--  Scripts-->
+    <script src="min/plugin-min.js"></script>
+    <script src="min/custom-min.js"></script>
+   <script type="text/javascript" src="js/admin_controller.js"></script>
+   <script type="text/javascript" src="js/bootstrap-filestyle.min.js"> </script>
+
+
+    </body>
+</html>

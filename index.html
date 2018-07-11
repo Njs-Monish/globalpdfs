@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="theme-color" content="#2196F3">
+    <title>Welcome to Globalpdfs.com </title>
+
+    <!-- CSS  -->
+    <link href="min/plugin-min.css" type="text/css" rel="stylesheet">
+    <link href="min/custom-min.css" type="text/css" rel="stylesheet" >
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  	<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+		
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function(){
+    $('input.typeahead').typeahead({
+        name: 'typeahead',
+        remote:'search.php?key=%QUERY',
+        limit : 10
+    });
+});
+    </script>
+    <style type="text/css">
+.bs-example{
+	font-family: sans-serif;
+	position: relative;
+	margin: 50px;
+}
+.typeahead, .tt-query, .tt-hint {
+	border: 2px solid #F36221;
+	border-radius:5px;
+	font-size: 24px;
+	height: 50px;
+	line-height: 30px;
+	outline: medium none;
+	padding:8px 20px;
+	width: 100%;
+}
+.typeahead {
+	background-color: #FFFFFF;
+}
+.typeahead:focus {
+	border: 2px solid #F36221;
+}
+.tt-query {
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+}
+.tt-hint {
+	color: #999999;
+}
+.tt-dropdown-menu {
+	background-color: #FFFFFF;
+	border: 1px solid #F36221;
+	border-radius: 8px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	margin-top: 12px;
+	padding: 8px 0;
+	width: 422px;
+}
+.tt-suggestion {
+	font-size: 24px;
+	line-height: 24px;
+	padding: 3px 20px;
+}
+.tt-suggestion.tt-is-under-cursor {
+	background-color: #0097CF;
+	color: #FFFFFF;
+}
+.tt-suggestion p {
+	margin: 0;
+}
+  
+  .login{
+  padding-top:175px;
+  }
+  span{
+  color:red;
+  }
+  .form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #fff;
+     background-color: transparent; 
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 1000;
+    font-size: large;
+}
+.btn-default {
+    color: #F1F3F5;
+    background-color: transparent;
+    border-color: #F36221;
+}
+.btn-default:hover {
+    color: #fff;
+    background-color: #F36221;
+    border-color: #F36221;
+}
+
+.btn-default1 {
+    color: #F1F3F5;
+    background-color:#F36221 ;
+    border-color: #F36221;
+	transition-delay:10s;
+}
+.btn-default1:hover {
+    color: #F36221;
+    background-color: transparent;
+    border-color: #F36221;
+}
+ #preloader { position: fixed; left: 0; top: 0; z-index: 999; width: 100%; height: 100%; overflow: visible; background: #333 url('img/preloader.gif') no-repeat center center; }
+
+  
+ </style>
+ <script>
+ jQuery(document).ready(function($) {  
+
+// site preloader -- also uncomment the div in the header and the css style for #preloader
+$(window).load(function(){
+	$('#preloader').fadeOut('slow',function(){$(this).remove();});
+});
+
+});
+ </script>
+</head>
+<body id="top" class="scrollspy" ng-app="gp" ng-controller="gp_ctrl">
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.7";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!-- Pre Loader -->
+  <div id="preloader"></div>
+    
+<!--Navigation-->
+ <div class="navbar-fixed">
+    <nav id="nav_f" class="default_color" role="navigation">
+        <div class="container">
+            <div class="nav-wrapper">
+            <a href="#" id="logo-container" class="brand-logo">Global pdfs</a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="termsandpolicies.html">Terms and Policies</a></li>
+                </ul>
+                <ul id="nav-mobile" class="side-nav">
+ <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                        <li><a href="termsandpolicies.html">Terms and Policies</a></li>
+                                
+	         
+				 </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<!--Hero-->
+
+<!--contact us -->
+<div id="contact" class="section scrollspy white-text" >
+
+<div class="container ">
+ <div class="row">
+
+ <div class="col-sm-12 text-center">
+ <div class="row text-center">
+      <div class="col-md-10">
+ 
+            <input type="text" name="typeahead"  ng-model="search_sub" class="typeahead tt-query" autocomplete="on" spellcheck="false" placeholder="Search by subject name">
+    <input type="button" value="Search" class="btn btn-default " id="search_button" ng-click="search_subject()">
+  
+</div>
+  </div>
+  </div>
+  <div class="row" >
+        <div class="col s12 m4" ng-repeat="n in notes_download">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+            <div ng-if="n.name">
+           
+              <span class="card-title"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> {{ n.sub_name }}</span>
+              <p><b>Uploaded by Mr . {{n.name}} </b> <br><b> <div ng-if="n.designation">Deignation : {{n.designation}}</div><div ng-if="n.instuition"> at {{n.instuition}} </div><br> <b> Downloads : {{n.downloads}} </b></p>
+            </div>
+            <div class="card-action">
+              <a href="\notes\{{n.link}}.{{n.extension}}" download ng-click="add_downloads(n.link)">Download</a>
+            </div>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+ 
+</div>
+		<br>
+<div class="col-sm-12  text-center">
+<div class="col-sm-12  text-center" align="center" ng-repeat="count in notes_counting">
+
+<h3>Total notes available : <button class="btn-default1 btn-lg" count-to="{{count.notes_count}}" value="{{countFrom}}" duration="2"></button></h3>
+
+
+ <h3>Total Downloads : <button class="btn-default1 btn-lg" count-to="{{count.downloads}}" value="{{countFrom}}" duration="2"></button><br></h3>
+</div>
+<h4>Login to upload your notes</h4> 
+<button class="btn-default btn-lg"  style="padding-right:15px;" ng-click="login_open_modal()">Log-in</button>
+<button class="btn-default1 btn-lg" ng-click="signup_open_modal()">Create Account</button>
+<center> <h3> <b> Upload Notes and Serve Knowledge </b></h3></center>
+
+</div>
+</div>		
+ 
+ </div>
+</div>
+</div>
+<!-- end of contact us -->
+
+<!--login modal box-->
+<div id="login_open" class="overlay"  align="center">
+  <a href="javascript:void(0)" class="closebtn" ng-click="login_close_modal()">×</a>
+  <div class="overlay-content">
+ <form name="myForm_login" id="myForm_login"  >
+   <div class="container">
+   <div class="row " >
+   <div class="col-sm-12 text-center" align="center">
+       <div class="col-sm-10 form-group">
+    
+   <label for="email">Email</label>
+   <input type="email" class="form-control" id="email" name="email" ng-model="login_email" required/>
+   <span ng-show="myForm_login.email.$error.required && myForm_login.email.$dirty">required</span>
+   <span ng-show="!myForm_login.email.$error.required && myForm_login.email.$error.email && myForm_login.email.$dirty">invalid email</span>
+    <span id="email_already_exists" style="color:red;"> </span>
+  </div>
+       <br />
+	      <div class="col-sm-10 form-group">
+    
+       <label for="password">Password</label>
+       <input type="password" class="form-control" id="password" name="password" ng-model="login_password" ng-minlength="8" ng-maxlength="20" ng-pattern="/(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z])/" required  />
+       <br />
+	   </div>
+	             <div class="col-sm-10 form-group ">
+    
+   <input type="submit" class="btn-default btn-lg" class="form-control" id="login_button" ng-disabled="!myForm_login.$valid" ng-model="login_button" ng-click="login_func()" value="Log-in"></input>
+    <input type="submit" class="btn-default btn-lg" class="form-control" ng-click="fp_open_modal()" value="Forgot Password ?"></input>
+
+	</div>
+	</div>
+	</form>
+  
+  
+   </div>
+</div>
+</div>
+</div>
+
+<!--end of log in modal box-->
+<!--Sign Up  modal box-->
+<div id="signup_open" class="overlay"  align="center">
+  <a href="javascript:void(0)" class="closebtn" ng-click="signup_close_modal()">×</a>
+  <div class="overlay-content">
+
+   <form name="myForm" id="myForm">
+   <div class="container">
+   <div class="row " >
+   <div class="col-sm-12 text-center" align="center">
+       <div class="col-sm-10 form-group">
+    
+   <label for="email">Email</label>
+   <input type="email" class="form-control" id="email" name="email" ng-model="email" required/>
+   <span ng-show="myForm.email.$error.required && myForm.email.$dirty">required</span>
+   <span ng-show="!myForm.email.$error.required && myForm.email.$error.email && myForm.email.$dirty">invalid email</span>
+    <span id="email_exist" style="color:red;"> </span>
+  </div>
+       <br />
+	      <div class="col-sm-10 form-group">
+    
+   <label for="email">Name</label>
+   <input type="text" class="form-control" id="name" name="name" ng-model="name" required/>
+   <span ng-show="myForm.name.$error.required && myForm.name.$dirty">required</span>
+       <br />
+	   </div>
+          <div class="col-sm-10 form-group">
+    
+       <label for="password">Password</label>
+       <input type="password" class="form-control" id="password" name="password" ng-model="gp_password" ng-minlength="8" ng-maxlength="20" ng-pattern="/(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z])/" required  />
+   <span ng-show="myForm.password.$error.required && myForm.password.$dirty">required</span>
+   <span ng-show="!myForm.password.$error.required && (myForm.password.$error.minlength || myForm.password.$error.maxlength) && myForm.password.$dirty">Passwords must be between 8 and 20 characters.</span>
+   <span ng-show="!myForm.password.$error.required && !myForm.password.$error.minlength && !myForm.password.$error.maxlength && myForm.password.$error.pattern && myForm.password.$dirty">Must contain one lower &amp; uppercase letter, and one non-alpha character (a number or a symbol.)</span>
+       <br />
+	   </div>
+          <div class="col-sm-10 form-group">
+    
+       
+       <label for="password_c">Confirm Password</label>
+       <input type="password" class="form-control" id="password_c" name="password_c" ng-model="formData.password_c" valid-password-c required  />
+   <span ng-show="myForm.password_c.$error.required && myForm.password_c.$dirty">Please confirm your password.</span>
+       <br />
+	   </div>
+          <div class="col-sm-10 form-group white-text">
+    <i>You agree to the Terms and Policies by creating the account</i><br>
+   <input type="submit" id="signup_button" class="btn-default1 btn-lg" class="form-control" value="Sign up" ng-disabled="!myForm.$valid" ng-click="signup_func()">
+	</div>
+	</div>
+	</form>
+   </div>
+</div>
+</div>
+</div>
+     <!--end of signup modal box-->
+     <!--FP  modal box-->
+
+<div id="fp_open" class="overlay"  align="center">
+  <a href="javascript:void(0)" class="closebtn" ng-click="fp_close_modal()">×</a>
+  <div class="overlay-content">
+
+   <form name="myForm_fp" id="myForm">
+   <div class="container">
+   <div class="row " >
+   <div class="col-sm-12 text-center" align="center">
+       <div class="col-sm-10 form-group">
+    
+   <label for="email">Email</label>
+   <input type="email" class="form-control" id="email" name="email" ng-model="fp_email" required/>
+   <span ng-show="myForm.email.$error.required && myForm.email.$dirty">required</span>
+   <span ng-show="!myForm.email.$error.required && myForm.email.$error.email && myForm.email.$dirty">invalid email</span>
+    <span id="fp_email_exist" style="color:red;"> </span>
+  </div>
+       <br />
+	      
+          
+         
+          <div class="col-sm-10 form-group white-text">
+   <input type="submit" id="fp_button" class="btn-default1 btn-lg" class="form-control" value="Send Password" ng-disabled="!myForm_fp.$valid" ng-click="fp_func()">
+	</div>
+	</div>
+	</form>
+   </div>
+</div>
+</div>
+</div>
+<!-- End of FP Modal box -->
+<!--Footer-->
+<footer id="contact" class="page-footer default_color scrollspy">
+    <div class="container">  
+        <div class="row">
+            <div class="col l6 s12">
+		
+               </div>
+            <div class="col l5 s12">
+                <h5 class="white-text">www.globalpdfs.com</h5>
+                <ul>
+                   <li><a class="white-text" href="about.html">About Us</a></li>
+                    <li><a class="white-text" href="contact.html">Contact</a></li>
+                     <li><a class="white-text" href="termsandpolicies.html">Terms and Policies</a></li>
+                
+			</ul>
+            </div>
+            <div class="col l5 s12">
+                <h5 class="white-text">Like us on Facebook</h5>
+                <ul>
+                  
+                    <li>
+                       
+                       <div class="fb-page"
+  data-href="https://www.facebook.com/globalpdfs" 
+  data-width="340"
+  data-hide-cover="false"
+  data-show-facepile="true"></div>
+                       </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright default_color">
+            <div class="container">
+            © 2016 Copyright www.globalpdfs.com 
+            <a class="grey-text text-lighten-4 right" href="#!">www.globalpdfs.com</a>
+            </div>
+        
+</footer>
+
+
+    <!--  Scripts-->
+    <script src="min/plugin-min.js"></script>
+    <script src="min/custom-min.js"></script>
+		<script src="js/classie.js"></script>
+		  <script src="js/angular-count-to.min.js"></script>
+  
+		<script src="js/index_controller.js"></script>
+		<script type="text/javascript" src="js/jquery.toaster.js"></script>
+		 <script src="js/typeahead.min.js"></script>
+	
+
+	
+
+    </body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="theme-color" content="#2196F3">
+    <title>Welcome to Globalpdfs.com </title>
+
+    <!-- CSS  -->
+    <link href="min/plugin-min.css" type="text/css" rel="stylesheet">
+    <link href="min/custom-min.css" type="text/css" rel="stylesheet" >
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <style>
+  .form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #fff;
+     background-color: transparent; 
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+span{
+color:red;}
+.btn-default {
+    color: #F1F3F5;
+    background-color: transparent;
+    border-color: #F36221;
+}
+.btn-default:hover {
+    color: #fff;
+    background-color: #F36221;
+    border-color: #F36221;
+}
+.btn-default1 {
+    color: #F1F3F5;
+    background-color:#F36221 ;
+    border-color: #F36221;
+	transition-delay:10s;
+}
+.btn-default1:hover {
+    color: #F36221;
+    background-color: transparent;
+    border-color: #F36221;
+}
+
+
+  </style>
+</head>
+<body id="top" class="scrollspy" ng-app ="contact_form" ng-controller="contact_form_ctrl">
+
+<!-- Pre Loader -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.7";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!--Navigation-->
+ <div class="navbar-fixed">
+    <nav id="nav_f" class="default_color" role="navigation">
+        <div class="container">
+            <div class="nav-wrapper">
+            <a href="index.html" id="logo-container" class="brand-logo">Global pdfs</a>
+                <ul class="right hide-on-med-and-down">
+				   
+                    <li><a href="about.html">About Us</a></li>
+                        <li><a href="termsandpolicies.html">Terms and Policies</a></li>
+                
+                  </ul>
+                <ul id="nav-mobile" class="side-nav">
+                     <li><a href="about.html">About Us</a></li>
+                         <li><a href="termsandpolicies.html">Terms and Policies</a></li>
+                
+                 
+				 </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<!--Hero-->
+
+
+<!--contact us -->
+<div id="contact" class="section scrollspy white-text" >
+
+<div class="container ">
+ <h2 class="" style="margin-left:20px;">Contact us</h2><br>
+ 
+  <div class="row">
+  <form name="myForm">
+   
+  
+    <div class="col-sm-8 text-center" align="center">
+       <div class="col-sm-6 form-group">
+          <input class="form-control" ng-model ="name" name="username"  placeholder="Name" type="text" required>
+<span ng-show="myForm.username.$error.required && myForm.username.$dirty">required</span>
+          
+		</div>
+     
+        <div class="col-sm-6 form-group">
+          <input class="form-control" name="email" ng-model ="email" placeholder="E-mail" type="email" required>
+		     <span ng-show="myForm.email.$error.required && myForm.email.$dirty">required</span>
+   <span ng-show="!myForm.email.$error.required && myForm.email.$error.email && myForm.email.$dirty">invalid email</span>
+   
+        </div>
+        <div class="col-sm-12 form-group">
+       
+      <textarea class="form-control"  name ="comments" ng-model ="comments" placeholder="Comment" rows="5"></textarea>
+	  <span ng-show="myForm.comments.$error.required && myForm.comments.$dirty">required</span>
+
+	  <br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <input type="button" value="contact" class="btn-lg btn-default1 pull-right" ng-disabled="!myForm.$valid" id="contact_button" ng-click ="contact_func()"></input>
+        </div>
+      </div> 
+    </div>
+  </div>
+  </form>
+</div>
+</div>
+<!-- end of contact us -->
+<!--Footer-->
+<footer id="contact" class="page-footer default_color scrollspy">
+    <div class="container">  
+        <div class="row">
+            <div class="col l6 s12">
+		
+               </div>
+            <div class="col l5 s12">
+                <h5 class="white-text">www.globalpdfs.com</h5>
+                <ul>
+                   <li><a class="white-text" href="about.html">About Us</a></li>
+                    <li><a class="white-text" href="contact.html">Contact</a></li>
+                      <li><a class="white-text" href="termsandpolicies.html">Terms and Policies</a></li>
+                
+			</ul>
+            </div>
+            <div class="col l5 s12">
+                <h5 class="white-text">Like us on Facebook</h5>
+                <ul>
+                  
+                    <li>
+                       
+                       <div class="fb-page"
+  data-href="https://www.facebook.com/globalpdfs" 
+  data-width="340"
+  data-hide-cover="false"
+  data-show-facepile="true"></div>
+                       </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright default_color">
+            <div class="container">
+            © 2016 Copyright www.globalpdfs.com 
+            <a class="grey-text text-lighten-4 right" href="#!">www.globalpdfs.com</a>
+            </div>
+        
+</footer>
+
+
+
+
+    <!--  Scripts-->
+    <script src="min/plugin-min.js"></script>
+    <script src="min/custom-min.js"></script>
+   <script type="text/javascript" src="js/contact_controller.js"></script>
+ <script type="text/javascript" src="js/jquery.toaster.js"></script>
+
+    </body>
+</html>
